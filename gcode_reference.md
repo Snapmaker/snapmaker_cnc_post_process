@@ -20,7 +20,7 @@ A linear move traces a straight line from one point to another, ensuring that th
 
 A command like `G1 F1000` sets the feedrate for all subsequent moves.
 
-*The arc move(G2/G3) should be convert to linear move by tolerance. refer to [Fusion 360 Post Example](./asset/snapmaker-fusion360-configuration-20180730/snapmaker.cps)*
+*The arc move(G2/G3) should be convert to linear move by tolerance. refer to [Fusion 360 Post Example](./assets/snapmaker-fusion360-configuration-20180730/snapmaker.cps)*
 
 
 ### M3
