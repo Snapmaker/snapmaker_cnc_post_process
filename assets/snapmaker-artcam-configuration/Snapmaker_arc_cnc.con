@@ -1,0 +1,72 @@
+;
+; G - Code configuration file - with Arc Support
+;
+; History
+;
+; Who When     What
+; === ======== ========================================
+; TM  13/05/99 Written
+; BEM 20/05/99 Removed line numbers
+; BEM 21/03/00 Added DESCRIPTION and FILE_EXTENSION fields
+; BEM 19/06/01 Added support for circular arc output 
+;              move to home pos at end instead of 0,0,ZH
+; bem 07/09/01 Added G17 to define plane for circular arcs
+;
+DESCRIPTION = "Snapmakder CNC (mm) (*.tap)"
+;
+FILE_EXTENSION = "tap"
+;
+UNITS = MM
+;
+; Cariage return - line feed at end of each line
+;
+END_OF_LINE = "[13][10]"
+;
+; Block numbering 
+;
+LINE_NUM_START     = 0
+LINE_NUM_INCREMENT = 10
+LINE_NUM_MAXIMUM   = 999999
+;
+; Set up default formating for variables
+;
+; Line numbering
+FORMAT = [N|@|N|1.0]
+; Spindle Speed
+FORMAT = [S|@|S|1.0]
+; Feed Rate
+FORMAT = [F|#|F|1.1]
+; Tool moves in x,y and z
+FORMAT = [X|#|X|1.3]
+FORMAT = [Y|#|Y|1.3]
+FORMAT = [Z|#|Z|1.3]
+; Arc Centre Cordinates
+FORMAT = [I|@|I|1.3]
+FORMAT = [J|@|J|1.3]
+; Home tool positions 
+FORMAT = [XH|@|X|1.3]
+FORMAT = [YH|@|Y|1.3]
+FORMAT = [ZH|@|Z|1.3]
+;
+; Set up program header
+;
+START = "G0 Z10.00 F120"
+START = "G0 Z0.50 F120"
+START = "M3 P100"
+;
+; Program moves
+;
+RAPID_RATE_MOVE        = "G0 [X] [Y] [Z]"
+;
+FIRST_FEED_RATE_MOVE   = "G1 [X] [Y] [Z] [F]"
+FEED_RATE_MOVE         = "G1 [X] [Y] [Z]"
+;
+FIRST_CW_ARC_MOVE      = "G2 [X] [Y] [I] [J] [F]"
+CW_ARC_MOVE            = "G2 [X] [Y] [I] [J]"
+;
+FIRST_CCW_ARC_MOVE     = "G3 [X] [Y] [I] [J] [F]"
+CCW_ARC_MOVE           = "G3 [X] [Y] [I] [J]"
+;
+; End of file
+;
+END = "M5"
