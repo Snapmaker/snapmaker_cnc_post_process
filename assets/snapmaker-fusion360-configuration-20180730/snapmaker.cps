@@ -86,7 +86,7 @@ function writeBlock() {
 }
 
 function formatComment(text) {
-  return "(" + String(text).replace(/[\(\)]/g, "") + ")";
+  return ";" + String(text).replace(/[\(\)]/g, "");
 }
 
 /**
@@ -113,26 +113,25 @@ function onOpen() {
   // dump machine configuration
   // var vendor = machineConfiguration.getVendor();
   var description = "Generic Snapmaker (Marlin) v20180725"; // FIXME
-  var vendor = "SNAPMAKER";
+  var vendor = "Snapmaker";
   var model = machineConfiguration.getModel();
   // var description = machineConfiguration.getDescription();
 
   if (properties.writeMachine && (vendor || model || description)) {
     writeComment(localize("Machine"));
     if (vendor) {
-      writeComment("  " + localize("vendor") + ": " + vendor);
+      writeComment(localize("vendor") + ": " + vendor);
     }
     if (model) {
-      writeComment("  " + localize("model") + ": " + model);
+      writeComment(localize("model") + ": " + model);
     }
     if (description) {
-      writeComment("  " + localize("description") + ": "  + description);
+      writeComment(localize("description") + ": "  + description);
     }
   }
 
-  writeBlock(mFormat.format(3));
+  writeBlock(mFormat.format(3) + " P100");
   writeBlock("G4 S2"); // dwell 2 seconds.
-
 
   switch (unit) {
   case IN:
