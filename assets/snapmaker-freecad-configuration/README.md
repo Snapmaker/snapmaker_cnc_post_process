@@ -43,6 +43,7 @@ Install the software and save the configuration files according to the following
 1. Selected the **Job -> Operations -> Contour** and click ![alt path](./image/i-post.png) to post process.
 ![alt path](./image/post.png)
 2. Change the G-code name as you need, and save the G-code.
+![alt path](./image/cnc.png)
 
 
 
