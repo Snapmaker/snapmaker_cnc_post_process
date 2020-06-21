@@ -12,7 +12,7 @@
 ;              move to home pos at end instead of 0,0,ZH
 ; bem 07/09/01 Added G17 to define plane for circular arcs
 ;
-DESCRIPTION = "Snapmakder CNC (mm) (*.cnc)"
+DESCRIPTION = "Snapmaker CNC (mm) (*.cnc)"
 ;
 FILE_EXTENSION = "cnc"
 ;
