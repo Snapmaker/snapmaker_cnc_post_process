@@ -11,7 +11,7 @@ This software is available for Windows and Mac. Since the configuration for both
 Install the software and save the configuration files according to the following steps:
 
 1. Download and Install FreeCAD at https://www.freecadweb.org/.
-2. Select the ![alt path](./image/path.png)**Path workbenches** and click ![alt tool](./image/tool.png)**tool manager** to import the [Snapmaker-2.0-CNC-Tools(FreeCAD).json](./Snapmaker-2.0-CNC-Tools(FreeCAD).json).
+2. Select the ![alt path](./image/path.png)**Path workbenches** and click ![alt tool](./image/tool.png)**tool manager** to import the [Snapmaker-2.0-CNC-Tools.json](./Snapmaker-2.0-CNC-Tools.json).
 3. Copy [snapmaker_freecad_post.py](./snapmaker_freecad_post.py) to the C:\Program Files\\${FreeCAD Path}\Mod\Path\PathScripts\post to add the post processor of the Snapmaker to FreeCAD.
     - More FreeCAD path post details on the https://wiki.freecadweb.org/Path_Post
 
