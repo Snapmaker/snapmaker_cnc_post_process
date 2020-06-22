@@ -18,7 +18,7 @@ Snapmakerjs also support relief for small landscape.
 
 Generate gcode using Snapmakerjs 
 
-   * https://manual.snapmaker.com/cnc_carving/generate_g-code_using_fusion_360/41-generate-g-code-using-snapmakerjs.html
+   * https://support.snapmaker.com/hc/en-us/articles/360041252474-CNC-Carving
    * Using svg editor like Inkscrape or other software to export .svg file, then import into Snapmakerjs.
    * Notice that, .dxf is a format that working on to let Snapmakerjs read .dxf file. For now, you can use other tools like https://cloudconvert.com/dxf-to-svg or alternative to help to do the job if your CAD software can’t export .svg format. 
 
@@ -30,6 +30,7 @@ We can achieve serious task by using it.
 Generate gcode using Fusion 360 
 
    * https://manual.snapmaker.com/cnc_carving/generate_g-code_using_fusion_360/42-generate-g-code-using-fusion-360.html
+   * https://www.youtube.com/watch?v=h3vMEiMTlio&t=166s
    * We have developed post processor script for Fusion 360 to help more advanced use case. 
    * The reason we favor Fusion 360 is that it has free license for education.
 
