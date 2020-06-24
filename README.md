@@ -42,11 +42,11 @@ Generate gcode using Fusion 360
 | Software        | Status           |  link |
 | ------------- |:-------------:| -----:|
 | Snapmaker Luban| Stable | | 
-| Fusion 360     | Testing | |
-| FreeCAD    | TODO     |   |
-| ArtCAM|TODO||
+| Fusion 360     | Stable | |
+| FreeCAD    | Testing     |   |
+| ArtCAM|Testing||
 | Mastercam | TODO      |  |
-| Aspire |TODO ||
+| Aspire |Testing ||
 
 
 
