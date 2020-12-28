@@ -14,7 +14,7 @@ To install, in solidworks CAM :
 
 1. Launch solidworks and go to **SolidworksCAM tab** 
 
-   In case you don't see it, try to see if it is available by right-clicking the tab region under the main top-ribbon, and check if SolidworksCAM is present and not checked. If so, check it. ( It however still may not be available depending on your licence options )![activate_solidworks_CAM_tab](images_docs\activate_solidworks_CAM_tab.PNG)
+   In case you don't see it, try to see if it is available by right-clicking the tab region under the main top-ribbon, and check if SolidworksCAM is present and not checked. If so, check it. ( It however still may not be available depending on your licence options )![activate_solidworks_CAM_tab](images_docs/activate_solidworks_CAM_tab.PNG)
 
 2. Select the CNC solidworks gestion tab in the left-pannel :![Setting_location](images_docs\Setting_location.PNG)
 
