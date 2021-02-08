@@ -13,19 +13,19 @@
 
 If you want to do some simple job. You can use any svg editor (Like Inkscape or Adobe Illustrator) to do the design, then export .svg file. Using Snapmaker Luban to generate the gcode. 
 
-Snapmakerjs also supports relief for small landscape. 
+Snapmaker Luban also supports relief for small landscape. 
 
 
-Generate gcode using Snapmakerjs 
+Generate gcode using Luban 
 
    * https://support.snapmaker.com/hc/en-us/articles/360041252474-CNC-Carving
-   * Using svg editor like Inkscape or other software to export .svg file, then import into Snapmakerjs.
-   * Notice that, .dxf is a format that working on to let Snapmakerjs read .dxf file. For now, you can use other tools like https://cloudconvert.com/dxf-to-svg or alternative to help to do the job if your CAD software can’t export .svg format. 
+   * Using svg editor like Inkscape or other software to export .svg file, then import into Luban.
+   * Notice that, Luban has supported .dxf file. 
 
 
 **Fusion360**
 
-We can do more serious tasks by using Adobe Fusion360. 
+We can do more serious tasks by using Autodesk Fusion360. 
 
 Generate gcode using Fusion 360 
 
