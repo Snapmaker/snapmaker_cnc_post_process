@@ -39,14 +39,14 @@ Generate gcode using Fusion 360
 
 ##  Support software status overview 
 
-| Software        | Status           |  link |
-| ------------- |:-------------:| -----:|
-| Snapmaker Luban| Stable | | 
-| Fusion 360     | Stable | |
-| FreeCAD    | Testing     |   |
-| ArtCAM|Testing||
-| Mastercam | TODO      |  |
-| Aspire |Testing ||
+| Software        | Status           |  link | versions |
+| ------------- |:-------------:| -----:|-----:|
+| Snapmaker Luban| Stable | | |
+| Fusion 360     | Stable | |v2.0.9937 |
+| FreeCAD    | Testing     |   |v0.18|
+| ArtCAM|Testing| |v2018.0.0|
+| Mastercam | TODO      |  ||
+| Aspire |Testing | |v9.514|
 
 
 
