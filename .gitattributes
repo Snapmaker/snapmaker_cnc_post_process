@@ -1,0 +1,4 @@
+# GitHub identifies *.cps files as Component Pascal programming language.
+# Fusion 360 post processor files have *.cps extension but are written in JavaScript.
+# This line tells GitHub those files are JavaScript
+*.cps linguist-language=JavaScript
