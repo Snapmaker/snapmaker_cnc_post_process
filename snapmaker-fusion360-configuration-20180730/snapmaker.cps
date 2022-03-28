@@ -411,6 +411,11 @@ function onSectionEnd() {
 }
 
 function onClose() {
-  writeBlock(gFormat.format(0), xOutput.format(0), yOutput.format(0));  // @TODO return to the origin
+  // Removed the line below to avoid crashing against the part or the clamps
+  //writeBlock(gFormat.format(0), xOutput.format(0), yOutput.format(0));  // @TODO return to the origin
+
+  // This command causes G-code processing to pause and wait in a loop until all moves in the planner are completed
+  writeBlock(mFormat.format(400));
+  // Turn off the spindle
   writeBlock(mFormat.format(5));
 }
