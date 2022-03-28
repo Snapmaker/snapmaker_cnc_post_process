@@ -6,6 +6,13 @@
 
 */
 
+{                                                            // User configuration. Please change only these values on this file
+  MIN_SPINDLE_SPEED                  = "6000";               // Minimum spindle speed. The lower it gets the less torque.
+  MAX_SPINDLE_SPEED                  = "12000";              // Maximum spindle speed. On Snapmaker 2.0 this is 12000rpm
+  DWELL_TIME_SPIN_UP                 = "2";                  // Dwell time for spin up in seconds. Used immediately after spindle start
+  DWELL_TIME_SPIN_DOWN               = "3";                  // Dwell time for spin down in seconds. Used immediately after spindle stop
+}
+
 description = "Generic Snapmaker (Marlin)";
 vendor = "SNAPMAKER";
 vendorUrl = "http://www.snapmaker.com";
@@ -39,8 +46,6 @@ properties = {
   sequenceNumberIncrement: 1, // increment for sequence numbers
   separateWordsWithSpace: true // specifies that the words should be separated with a white space
 };
-
-
 
 var gFormat = createFormat({prefix:"G", decimals:0});
 var mFormat = createFormat({prefix:"M", decimals:0});
@@ -130,8 +135,10 @@ function onOpen() {
     }
   }
 
-  writeBlock(mFormat.format(3) + " P100");
-  writeBlock("G4 S2"); // dwell 2 seconds.
+  // The 2 lines below are now implemented in the onSection() function and support not only
+  // different speeds as well as CW and CCW direction rotaation
+  // writeBlock(mFormat.format(3) + " P100");
+  // writeBlock("G4 S2"); // dwell 2 seconds.
 
   switch (unit) {
   case IN:
@@ -170,6 +177,20 @@ function forceAny() {
 }
 
 function onSection() {
+
+  // Converts the spindle RPM to a correct value between MIN_SPINDLE_SPEED and MAX_SPINDLE_SPEED
+  // and converts it to a percentage
+  var tSpeed = tool.spindleRPM;
+  if (tSpeed < MIN_SPINDLE_SPEED) {
+    tSpeed = MIN_SPINDLE_SPEED;
+  }
+  if (tSpeed > MAX_SPINDLE_SPEED) {
+    tSpeed = MAX_SPINDLE_SPEED;
+  }
+  var tSpeedPercent = tSpeed * 100 / MAX_SPINDLE_SPEED;
+  writeBlock(mFormat.format(4-toolClockWise) + " P" + Math.ceil(tSpeedPercent));
+  // Dwell to allow the spindle to spin up
+  writeBlock("G4 S" + DWELL_TIME_SPIN_UP);
 
   var retracted = false; // specifies that the tool has been retracted to the safe plane
 
@@ -236,6 +257,17 @@ function onDwell(seconds) {
 
 function onSpindleSpeed(spindleSpeed) {
   // writeBlock(sOutput.format(spindleSpeed));
+}
+
+// This will capture parameters sent to the post-processor and execute needed actions
+function onParameter(param_name, param_value) {
+  
+  // Read parameter "operation:tool_clockwise"
+  // This will be used to have the tool rotating in the correct direction. CW or CCW
+  if (param_name == "operation:tool_clockwise") {
+    toolClockWise = param_value;
+  }
+
 }
 
 var pendingRadiusCompensation = -1;
