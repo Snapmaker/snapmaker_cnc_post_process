@@ -1,2 +1,2 @@
 Please read
-https://manual.snapmaker.com/cnc_carving/generate_g-code_using_fusion_360/42-generate-g-code-using-fusion-360.html
+https://support.snapmaker.com/hc/en-us/articles/360060624834-CNC-Cutting-with-Files-Exported-from-Fusion-360

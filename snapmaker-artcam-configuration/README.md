@@ -8,7 +8,7 @@ This software is available for Windows and Mac. Since the configuration for both
 
 ### Step 1. Get the post-processer configuration Ready
 
-1. Download the post-processing configuration on our website https://snapmaker.com/download/snapmaker2.
+1. Download the post-processing configuration on our https://github.com/Snapmaker/snapmaker_cnc_post_process
 2. Copy [Snapmaker_arc_cnc.con](./Snapmaker_arc_cnc.con) to the C:\Program Files (x86)\${ArtCAM}\postp. Restart the ArtCAM.
 ![alt path](./image/post-processer.png)
 

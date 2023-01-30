@@ -29,7 +29,7 @@ We can do more serious tasks by using Autodesk Fusion360.
 
 Generate gcode using Fusion 360 
 
-   * https://manual.snapmaker.com/cnc_carving/generate_g-code_using_fusion_360/42-generate-g-code-using-fusion-360.html
+   * https://support.snapmaker.com/hc/en-us/articles/360060624834-CNC-Cutting-with-Files-Exported-from-Fusion-360
    * https://www.youtube.com/watch?v=h3vMEiMTlio&t=166s
    * We have developed post processor script for Fusion 360 to help more advanced use case. 
    * The reason we favor Fusion 360 is that it has free license for education.
@@ -42,11 +42,12 @@ Generate gcode using Fusion 360
 | Software        | Status           |  link | versions |
 | ------------- |:-------------:| -----:|-----:|
 | Snapmaker Luban| Stable | | |
-| Fusion 360     | Stable | |v2.0.9937 |
-| FreeCAD    | Testing     |   |v0.18|
-| ArtCAM|Testing| |v2018.0.0|
+| Fusion 360     | Stable | [snapmaker-fusion360-configuration-20180730](https://github.com/Snapmaker/snapmaker_cnc_post_process/tree/master/snapmaker-fusion360-configuration-20180730)|v2.0.9937 |
+| FreeCAD    | Testing     | [snapmaker-freecad-configuration](https://github.com/Snapmaker/snapmaker_cnc_post_process/tree/master/snapmaker-freecad-configuration) |v0.18|
+| ArtCAM|Testing|[snapmaker-artcam-configuration](https://github.com/Snapmaker/snapmaker_cnc_post_process/tree/master/snapmaker-artcam-configuration)|v2008|
 | Mastercam | TODO      |  ||
-| Aspire |Testing | |v9.514|
+| Aspire |Testing |[snapmaker-aspire-configuration](https://github.com/Snapmaker/snapmaker_cnc_post_process/tree/master/snapmaker-aspire-configuration)|v9.514|
+| Vcarve |Testing |[snapmaker-vcarve-configuration](https://github.com/Snapmaker/snapmaker_cnc_post_process/tree/master/snapmaker-vcarve-configuration)||
 
 
 
