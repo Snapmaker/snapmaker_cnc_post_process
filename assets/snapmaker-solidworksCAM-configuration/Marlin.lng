@@ -1,0 +1,120 @@
+program stop                                                          :0001:
+optional stop                                                         :0002:
+DRILLING                                                              :0003:
+SPOT_DRILLING                                                         :0004:
+PECKING                                                               :0005:
+TAPPING                                                               :0006:
+BORING                                                                :0007:
+HIGH_SPEED_PECKING                                                    :0008:
+VARIABLE_PECKING                                                      :0009:
+REVERSE_TAPPING                                                       :0010:
+REAMING                                                               :0011:
+REAMING_DWELL                                                         :0012:
+BORE_DWELL                                                            :0013:
+BACK_BORING                                                           :0014:
+FINE_BORING                                                           :0015:
+MILL_LACE                                                             :0016:
+MILL_POCKET                                                           :0017:
+MILL_PROFILING                                                        :0018:
+MILL_MISC                                                             :0019:
+MILL_UV_CUT                                                           :0020:
+MILL_SLICE_CUT                                                        :0021:
+MILL_ROUGH_CUT                                                        :0022:
+MILL_CURVE_CUT                                                        :0023:
+MILL_TOPO_CUT                                                         :0024:
+MILL_FREEFORM_CUT                                                     :0025:
+MILL_PENCIL_CUT                                                       :0026:
+MILL_MACRO                                                            :0027:
+Post Program Stop                                                     :0028:
+Machine Name                                                          :0029:
+                                                                      :0030:
+Controller Type                                                       :0031:
+                                                                      :0032:
+Z Home                                                                :0033:
+                                                                      :0034:
+Traverse Rate                                                         :0035:
+                                                                      :0036:
+System License Number                                                 :0037:
+                                                                      :0038:
+System License Expiration                                             :0039:
+                                                                      :0040:
+                                                                      :0041:
+                                                                      :0042:
+Tool's Safety X position                                              :0043:
+ENTER X coord for Safe Space                                          :0044:
+Tool's Safety Y position                                              :0045:
+ENTER Y coord for Safe Space                                          :0046:
+Tool's Safety Z position                                              :0047:
+ENTER Z coord for Safe Space                                          :0048:
+Max X Acceleration                                                    :0049:
+ENTER Max X Acceleration                                              :0050:
+Max Y Acceleration                                                    :0051:
+ENTER Max Y Acceleration                                              :0052:
+Max Z Acceleration                                                    :0053:
+ENTER Max Z Acceleration                                              :0054:
+Max X Feedrate                                                        :0055:
+ENTER Max X Feedrate                                                  :0056:
+Max Y Feedrate                                                        :0057:
+ENTER Max Y Feedrate                                                  :0058:
+Max Z Feedrate                                                        :0059:
+ENTER Max Z Feedrate                                                  :0060:
+Absolute Incremental                                                  :0061:
+SELECT Absolute Incremental                                           :0062:
+Absolute                                                              :0063:
+Incremental                                                           :0064:
+Work Coordinate 54 - 59                                               :0065:
+ENTER Work Coordinate 54 - 59                                         :0066:
+Coolant                                                               :0067:
+SELECT Coolant                                                        :0068:
+Off                                                                   :0069:
+Flood                                                                 :0070:
+Mist                                                                  :0071:
+Through Hole                                                          :0072:
+Sub Work Coordinate 1 - 1                                             :0073:
+ENTER Sub Work Coordinate 1 - 100                                     :0074:
+Dwell                                                                 :0075:
+ENTER Dwell                                                           :0076:
+Shift Amount                                                          :0077:
+ENTER Shift Amount                                                    :0078:
+Compensation                                                          :0079:
+SELECT Compensation                                                   :0080:
+On                                                                    :0081:
+Off                                                                   :0082:
+Left                                                                  :0083:
+Right                                                                 :0084:
+Program/Optional Stop                                                 :0085:
+SELECT Program/Optional Stop                                          :0086:
+Program Stop                                                          :0087:
+Optional Stop                                                         :0088:
+Program number                                                        :0089:
+ENTER Program number                                                  :0090:
+Material                                                              :0091:
+ENTER Material Type                                                   :0092:
+Part Thickness                                                        :0093:
+ENTER Part Thickness                                                  :0094:
+5axis Arc Deviation                                                   :0095:
+ENTER 5axis Arc Deviation                                             :0096:
+Fixture Offset                                                        :0097:
+ENTER Fixture Offset                                                  :0098:
+Tool Holder Length                                                    :0099:
+ENTER Tool Holder Length                                              :0100:
+Sign Angle A                                                          :0101:
+SELECT Sign Angle A                                                   :0102:
+A+                                                                    :0103:
+A-                                                                    :0104:
+Rigid Tap On or Off                                                   :0105:
+SELECT Rigid Tap On or Off                                            :0106:
+On                                                                    :0107:
+Off                                                                   :0108:
+|(|MACHINE=                                                           :0109:
+|)                                                                    :0110:
+|(|CONTROLLER=                                                        :0111:
+|)                                                                    :0112:
+|(|PART|NAME=                                                         :0113:
+|)                                                                    :0114:
+|(|PROGRAM|NUMBER=                                                    :0115:
+|)                                                                    :0116:
+|(|MATERIAL=                                                          :0117:
+|)                                                                    :0118:
+|(|THICKNESS=                                                         :0119:
+|)                                                                    :0120:
